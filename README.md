@@ -1,7 +1,5 @@
 # synd: Syndicate Plus 64bit
 
-<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
-
 A static recompilation of the 1993 DOS game *Syndicate Plus* (Bullfrog's *Syndicate* with the *American Revolt*
 data disk) into a native 64-bit program for **Windows (x64)** and **macOS** (one universal app for Apple silicon
 and Intel Macs, macOS 11 or later).
@@ -132,3 +130,5 @@ The code of this port is under the MIT licence (`LICENSE`).  *Syndicate*, *Syndi
 this software.  This project is not affiliated with or endorsed by them.
 
 64bit version by Onur BUYUKCAGLAR, with Anthropic Claude AI assistance.
+
+<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
