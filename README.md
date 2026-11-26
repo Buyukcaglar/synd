@@ -1,5 +1,7 @@
 # synd: Syndicate Plus 64bit
 
+<a href="https://recomplauncher.com"><picture><source media="(prefers-color-scheme: dark)" srcset="https://recomplauncher.com/assets/press/launcher/badge-light.svg"><img alt="Get it on RecompLauncher" src="https://recomplauncher.com/assets/press/launcher/badge-dark.svg" height="48"></picture></a>
+
 A static recompilation of the 1993 DOS game *Syndicate Plus* (Bullfrog's *Syndicate* with the *American Revolt*
 data disk) into a native 64-bit program for **Windows (x64)** and **macOS** (one universal app for Apple silicon
 and Intel Macs, macOS 11 or later).
@@ -22,6 +24,22 @@ time and checks that they are the ones it was built from.
 [Releases](https://github.com/Buyukcaglar/synd/releases) has the Windows program (`Syndicate64.exe`, 64-bit
 Windows 10 or later) and the macOS app (signed and notarized).  On first start it asks for the folder of your
 Syndicate Plus installation (the one with `SYND.EXE`), then remembers it.
+
+## Playing through a launcher
+
+Two launchers can install and start the program for you.  Neither contains or downloads the game: both ask for
+the folder of your own Syndicate Plus installation (the one with `SYND.EXE`).
+
+- **[RecompLauncher](https://recomplauncher.com)**: install *Syndicate Plus 64bit* there, pick your game folder
+  once and press Play.  It starts `Syndicate64.exe --game-dir <folder>`; its page for the game has the full
+  screen setting and opens the saves, which are in `Save` beside the program.
+- **[sp00nznet's recomp-launcher](https://github.com/sp00nznet/recomp-launcher)** (Windows): from the next
+  tagged version on, the release has `Syndicate64-Installer-windows-x64.exe`.  Until then, in a checkout of this
+  repository, `launcher\setup.ps1 -Game "<folder>"` does the same by hand: it downloads the newest Windows
+  release into `play\` and writes `Syndicate Plus (recomp).cmd`, which starts it with your game folder.
+
+Either way the program checks that the game's programs are the release it was built from, and says so if they
+are not.
 
 ## The game files
 

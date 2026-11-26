@@ -1,0 +1,80 @@
+{
+  "$schema": "https://recomplauncher.com/schema/recomplauncher.json",
+  "format": 1,
+  "name": "Syndicate Plus 64bit",
+  "repo": "Buyukcaglar/synd",
+  "inputs": [
+    {
+      "id": "game",
+      "label": "Your installed folder of the DOS game Syndicate Plus: the folder that holds SYND.EXE.",
+      "formats": [
+        {
+          "type": "folder"
+        }
+      ],
+      "check": {
+        "file": "SYND.EXE"
+      }
+    }
+  ],
+  "start": {
+    "program": [
+      "Syndicate64.exe",
+      "Syndicate64.app"
+    ],
+    "args": [
+      "--game-dir",
+      "{input:game}"
+    ]
+  },
+  "saves": [
+    "{install}/Save"
+  ],
+  "folders": {
+    "saves": [
+      {
+        "path": "{install}/Save"
+      }
+    ]
+  },
+  "settings": [
+    {
+      "id": "fullscreen",
+      "label": "Full screen",
+      "in": "args",
+      "help": "Starts in full screen instead of a window.",
+      "choices": [
+        {
+          "label": "Window",
+          "args": []
+        },
+        {
+          "label": "Full screen",
+          "args": [
+            "--fullscreen"
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "id": "saves",
+      "label": "Saves",
+      "help": "Open the folder your saves are in.",
+      "open": "saves"
+    }
+  ],
+  "exit_codes": {
+    "1": "It couldn't start: SYND.EXE wasn't found in your game folder. Pick your game folder again on the game's page.",
+    "3": "It stopped with an error. If it said a program is not the version it was built from, your copy is another release of Syndicate Plus."
+  },
+  "system": {
+    "windows": {
+      "version": "10"
+    },
+    "macos": {
+      "version": "11"
+    }
+  }
+}

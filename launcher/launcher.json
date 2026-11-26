@@ -1,0 +1,28 @@
+{
+  "title": "Syndicate Plus 64bit",
+  "repo": "Buyukcaglar/synd",
+  "accent": "#8a8f2a",
+  "note": {
+    "default": "Nothing is compiled: the setup downloads this project's newest Windows release from GitHub (about 11 MB) and points it at your copy. It takes under a minute and needs the installed folder of the DOS game (the one that holds SYND.EXE). Windows only."
+  },
+  "game": {
+    "name": "Syndicate Plus (DOS)",
+    "files": [
+      "SYND.EXE",
+      "SYNDICAT/MAIN.EXE"
+    ]
+  },
+  "setup": {
+    "windows": [
+      "powershell",
+      "-NoProfile",
+      "-ExecutionPolicy",
+      "Bypass",
+      "-File",
+      "launcher\\setup.ps1",
+      "-Game",
+      "{game}"
+    ]
+  },
+  "play": "* (recomp).cmd"
+}
